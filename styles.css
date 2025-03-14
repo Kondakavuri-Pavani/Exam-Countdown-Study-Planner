@@ -1,0 +1,94 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+/* Left Side (Input Form) */
+.container {
+  width: 50%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea, button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.time-input {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="number"] {
+  width: 45%;
+}
+
+button {
+  background: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #218838;
+}
+
+.exam-item {
+  background: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.exam-item span {
+  font-weight: bold;
+}
+
+.delete-btn {
+  background: #dc3545;
+  padding: 5px 10px;
+  margin-top: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+/* Right Side (Flowchart) */
+.side-panel {
+  width: 50%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: fit-content;
+}
+
+#flowchart {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  min-height: 300px;
+}

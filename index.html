@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Countdown & Study Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.3/mermaid.min.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Left Side: Input Form -->
+        <div class="container">
+            <h2>📅 Exam Countdown & Study Planner</h2>
+
+            <label>Exam Name:</label>
+            <input type="text" id="exam-name" placeholder="Enter exam name">
+
+            <label>Exam Date:</label>
+            <input type="date" id="exam-date">
+
+            <label>Study Topics (comma-separated):</label>
+            <input type="text" id="exam-subjects" placeholder="Enter topics">
+
+            <label>Sub-topics (comma-separated):</label>
+            <textarea id="exam-subtopics" placeholder="Enter sub-topics"></textarea>
+
+            <label>Study Time Per Topic:</label>
+            <div class="time-input">
+                <input type="number" id="study-hours" placeholder="Hours" min="0">
+                <input type="number" id="study-minutes" placeholder="Minutes" min="0" max="59">
+            </div>
+
+            <label>Study Time Per Sub-topic:</label>
+            <div class="time-input">
+                <input type="number" id="subtopic-hours" placeholder="Hours" min="0">
+                <input type="number" id="subtopic-minutes" placeholder="Minutes" min="0" max="59">
+            </div>
+
+            <button onclick="addExam()">Add Exam</button>
+            <button onclick="showPreviousPlans()">Show Previous Plans</button>
+
+            <div id="exams-list"></div>
+        </div>
+
+        <!-- Right Side: Flowchart -->
+        <div class="side-panel">
+            <h3>📌 Study Plan Flowchart</h3>
+            <div id="flowchart"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
